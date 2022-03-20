@@ -87,11 +87,11 @@ body {
   font-size: 30px;
 }
 .responsive1 {
-  width: 80%;
+  width: 50%;
   height: auto;
 }
 .responsive2 {
-  width: 10%;
+  width: 20%;
   height: auto;
 }
 .p3 {
@@ -192,15 +192,15 @@ input[type=checkbox]:checked ~ label > img {
   cursor: zoom-out;
 }
 .center {
-position: relative;
-left: 80%;
-top: 40%;
+position: absolute;
+left: 55%;
+top: 45%;
 transform: translate(-50%, -50%);
 }
 .center1 {
-position: relative;
-left: 115%;
-top: 30%;
+position: absolute;
+left: 80%;
+top: 80%;
 transform: translate(-50%, -50%);
 }
 
@@ -213,12 +213,7 @@ transform: translate(-50%, -50%);
 <body class="body">
   <li><a href="../index.html"><img class="img1" src="../images/donutrojo.png" width="50" height="50" alt="donut"></a></li>
 
-  <div class="container center">
-    <input type="checkbox" id="zoomCheck">
-    <label for="zoomCheck">
-      <img src="images/bitter_1.png" class="responsive2">
-    </label>
-  </div>
+ 
 
 <div class="grid-container1">
   
@@ -231,11 +226,17 @@ transform: translate(-50%, -50%);
 
   </div>
 </div>
+<div class="container center">
+  <input type="checkbox" id="zoomCheck">
+  <label for="zoomCheck">
+    <img src="images/bitter_1.png" class="responsive2">
+  </label>
+</div>
 
   <div class="container center1">
     <input type="checkbox" id="zoomCheck2">
     <label for="zoomCheck2">
-      <img src="images/mivida_2.png" class="responsive2">
+      <img src="images/mivida_2.png" class="responsive1">
     </label>
   </div>
 
