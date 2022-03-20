@@ -35,17 +35,21 @@
 
 body {
   background-image: url("turbothunder1.jpg");
-  height: 100%; 
+  width: 100%; 
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
+  grid-auto-columns: 20px;
+	grid-auto-rows: 30%;
   gap: 10px;
   padding: 50px;
-  margin-left: -85%;
+  margin-left: -25%;
 }
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0);
@@ -54,8 +58,9 @@ body {
   padding: 20px 0;
   font-size: 30px;
 }
+
 .responsive1 {
-  width: 3%;
+  width: 5%;
   height: auto;
 }
 .responsive2 {
@@ -188,17 +193,17 @@ transform: translate(-50%, -50%);
   <div class="item1"><a href="navegation/product.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
   <p class="p3"> Product</p>
   </div>
-      <div class="item1"><a href="navegation/installations.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
+      <div class="item2"><a href="navegation/installations.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
         <p class="p3"> Installations</p>
         </div>
-        <div class="item1"><a href="navegation/alarido.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
+        <div class="item3"><a href="navegation/alarido.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
           <p class="p3"> Alarido</p>
           </div>
-          <div class="item2"><img id="myImg" src="images/aboutme.png" alt="aboutme" class="responsive1" >
+          <div class="item4"><img id="myImg" src="images/aboutme.png" alt="aboutme" class="responsive1" >
           </a>
             <p class="p3"> About Me</p>
             </div>
-            <div class="item3"><a href="navegation/interior.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
+            <div class="item5"><a href="navegation/interior.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
               <p class="p3"> Cv</p>
               </div>
   </div>
