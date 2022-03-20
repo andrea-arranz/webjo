@@ -44,12 +44,12 @@ body {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   grid-auto-columns: 20px;
 	grid-auto-rows: 30%;
   gap: 10px;
   padding: 50px;
-  margin-left: -25%;
+  margin-left: -85%;
 }
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0);
@@ -60,7 +60,7 @@ body {
 }
 
 .responsive1 {
-  width: 5%;
+  width: 2%;
   height: auto;
 }
 .responsive2 {
@@ -169,6 +169,11 @@ margin:auto;
 
 input[type=checkbox]:checked ~ label > img {
   transform: scale(6);
+  cursor: zoom-out;
+}
+
+input1[type=checkbox]:checked ~ label > img {
+  transform: scale(4);
   cursor: zoom-out;
 }
 .center {
