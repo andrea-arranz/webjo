@@ -19,30 +19,247 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joel Blanco</title>
   
-  <link rel="icon" type="image/x-icon" href="images/donut.png">
+  <link rel="icon" type="image/x-icon" href="../images/donut.png">
   <META NAME="DESCRIPTION" CONTENT="Joel is an inactive member of Pokemon's generation and designer. Studied Contextual Design MA at the Design Academy Eindhoven. Focused on scenario writing, speculative design and strategy development.">
   <meta name="keywords" content="design, consultancy strategy, diseño especulativo"/>
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="1894.6">
   <meta charset="UTF-8">
   <style type="text/css">
+
     body, html {
   height: 100%;
   margin: 0;
 }
 
-.bg {
-  background-image: url("turbothunder1.jpg");
+body {
+  background-color:rgb(0, 0, 0);
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-  </style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  background-color: #000000;
+  padding: 5px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  background-color: #000000;
+  padding: 5px 20;
+  align-items: center;
+  margin-left: 8%;
+}
 
+.grid-container2 > div {
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  background-color: #000000;
+  padding: 5px;
+  align-items: center;
+}
+
+.grid-container1 > div {
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.responsive1 {
+  width: 80%;
+  height: auto;
+}
+.responsive2 {
+  width: 10%;
+  height: auto;
+}
+.p3 {
+  font-family:sans-serif;
+  font-size: 15pt;
+  color:#ffffff;
+  height: auto;
+}
+#myImg {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 200px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.img1{
+display:block;
+margin:left;
+padding-left: 30px;
+}
+
+.item{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 50px;
+  
+}
+input[type=checkbox] {
+  display: none;
+}
+
+.container img {
+  margin: 50px;
+  transition: transform 0.5s ease;
+  cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(4);
+  cursor: zoom-out;
+}
+.center {
+position: relative;
+left: 80%;
+top: 40%;
+transform: translate(-50%, -50%);
+}
+.center1 {
+position: relative;
+left: 115%;
+top: 30%;
+transform: translate(-50%, -50%);
+}
+
+  </style>
 </head>
-<body>
-  <div class="bg"></div>
+
+
+
+
+<body class="body">
+  <li><a href="../index.html"><img class="img1" src="../images/donutrojo.png" width="50" height="50" alt="donut"></a></li>
+
+  <div class="container center">
+    <input type="checkbox" id="zoomCheck">
+    <label for="zoomCheck">
+      <img src="images/bitter_1.png" class="responsive2">
+    </label>
+  </div>
+
+<div class="grid-container1">
+  
+
+  <div class="item1"><img src="images/Bitter_2.jpg" alt="messless" class="responsive1">
+    <p class=p3>bitter_video.mov</p>
+    </div>
+    <div class="item2"> <iframe src="https://player.vimeo.com/video/207359799?h=c522d802a5" width="640" height="468" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/207359799"></a> <a href="https://vimeo.com/adreimatupentertainment"></a> on <a href="https://vimeo.com"></a></p>
+
+  </div>
+</div>
+
+  <div class="container center1">
+    <input type="checkbox" id="zoomCheck2">
+    <label for="zoomCheck2">
+      <img src="images/mivida_2.png" class="responsive2">
+    </label>
+  </div>
+
+
+  <div class="grid-container2">
+
+    <div class="item1"><iframe src="https://player.vimeo.com/video/246108337?h=bb5303ea27" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <p><a href="https://vimeo.com/246108337"></a><a href="https://vimeo.com/user12665842"></a><a href="https://vimeo.com"></a>.</p>
+      </div>
+
+    <div class="item1"><img src="images/mivida_1.png" alt="mivida" class="responsive1" height="70%" width="70%"> 
+      <p class=p3>mi_vida.mov</p>  
+    </div>
+
+    
+
+
+  
+    </div>
 
 </body>
+<script>
+  new Zooming().listen('img')
+</script>
+
+
 </html>
