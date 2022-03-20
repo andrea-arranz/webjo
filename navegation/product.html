@@ -28,23 +28,28 @@
   <style type="text/css">
 
     body, html {
-  height: 100%;
-  margin: 0;
+  width: 100%;
+
 }
 
 body {
   background-color:rgb(0, 0, 0);
-  height: 100%; 
+  height: 100%;;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 5px;
   background-color: #000000;
   padding: 5px;
+  width: 100%;
+
 }
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0);
@@ -60,6 +65,7 @@ body {
   background-color: #000000;
   padding: 5px;
   align-items: center;
+  width: 100%;
 }
 
 .grid-container2 > div {
@@ -150,6 +156,7 @@ body {
 display:block;
 margin:left;
 padding-left: 30px;
+position: fixed;
 }
 
 .item{
@@ -165,9 +172,10 @@ input[type=checkbox] {
 }
 
 .container img {
-  margin: 50px;
+  margin: 0px;
   transition: transform 0.5s ease;
   cursor: zoom-in;
+  overflow: hidden;
 }
 
 input[type=checkbox]:checked ~ label > img {
@@ -175,16 +183,40 @@ input[type=checkbox]:checked ~ label > img {
   cursor: zoom-out;
 }
 .center {
-position: relative;
-left: 80%;
-top: 50%;
+position: absolute;
+left: 40%;
+top: 100%;
 transform: translate(-50%, -50%);
+margin: 0px;
+size:20%;
+
 }
 .center1 {
-position: relative;
-left: 108%;
-top: 50%;
+position: absolute;
+left:70%;
+top: 25%;
 transform: translate(-50%, -50%);
+margin: 0px;
+
+
+}
+.center2 {
+position: absolute;
+left:70%;
+top: 185%;
+transform: translate(-50%, -50%);
+margin: 0px;
+
+
+}
+.center3 {
+position: absolute;
+left:40%;
+top: 250%;
+transform: translate(-50%, -50%);
+margin: 0px;
+
+
 }
   </style>
 </head>
@@ -193,14 +225,10 @@ transform: translate(-50%, -50%);
 
 
 <body class="body">
-  <li><a href="../index.html"><img class="img1" src="../images/donutrojo.png" width="50" height="50" alt="donut"></a></li>
 
-  <div class="container center1">
-    <input type="checkbox" id="zoomCheck">
-    <label for="zoomCheck">
-      <img src="images/messless3.png" class="responsive2">
-    </label>
-  </div>
+<li><a href="../index.html"><img class="img1" src="../images/donutrojo.png" width="50" height="50" alt="donut"></a></li>
+
+
 
 <div class="grid-container">
   
@@ -216,12 +244,19 @@ transform: translate(-50%, -50%);
     </div>
 
   </div>
-</div>
+  <div class="container">
+    <input type="checkbox" id="zoomCheck">
+    <label for="zoomCheck">
+      <img src="images/messless3.png" class="responsive2 center1">
+    </label>
+  </div>
+ 
+  
 
-  <div class="container center">
+  <div class="container">
     <input type="checkbox" id="zoomCheck2">
     <label for="zoomCheck2">
-      <img src="images/superlekker.png" class="responsive2">
+      <img src="images/superlekker.png" class="responsive2 center">
     </label>
   </div>
 
@@ -239,10 +274,10 @@ transform: translate(-50%, -50%);
     </div>
 
 
-  <div class="container center1">
+  <div class="container">
     <input type="checkbox" id="zoomCheck3">
     <label for="zoomCheck3">
-      <img src="images/nonovia-4.png" class="responsive2">
+      <img src="images/nonovia-4.png" class="responsive2 center2">
     </label>
   </div>
 
@@ -261,10 +296,10 @@ transform: translate(-50%, -50%);
       </div>
     </div>
    
-    <div class="container center">
+    <div class="container">
       <input type="checkbox" id="zoomCheck4">
       <label for="zoomCheck4">
-        <img src="images/toro_3.png" class="responsive2">
+        <img src="images/toro_3.png" class="responsive2 center3">
       </label>
     </div>
     <div class="grid-container2">
