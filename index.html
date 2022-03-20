@@ -67,6 +67,10 @@ body {
   width: 10%;
   height: auto;
 }
+.responsive3 {
+  width: 20%;
+  height: auto;
+}
 .p3 {
   font-family:sans-serif;
   font-size: 15pt;
@@ -142,7 +146,7 @@ margin:auto;
 }
 /*zoom*/
 .grid { 
-        column-count: 4;
+        column-count: 1;
         column-gap: 1rem;
       }
 
@@ -168,7 +172,7 @@ margin:auto;
 }
 
 input[type=checkbox]:checked ~ label > img {
-  transform: scale(6);
+  transform: scale(5);
   cursor: zoom-out;
 }
 
@@ -184,8 +188,14 @@ transform: translate(-50%, -50%);
 }
 .center1 {
 position: relative;
-left: 108%;
-top: 50%;
+left: 75%;
+top: 55%;
+transform: translate(-50%, -50%);
+}
+.center2 {
+position: relative;
+left: 35%;
+top: 10%;
 transform: translate(-50%, -50%);
 }
   </style>
@@ -204,7 +214,7 @@ transform: translate(-50%, -50%);
         <div class="item3"><a href="navegation/alarido.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
           <p class="p3">Alarido</p>
           </div>
-            <div class="item5"><a href="navegation/interior.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
+            <div class="item5"><a href="navegation/cv_joel.pdf" target="_blank"><img src="images/file.png" class="responsive1" alt="Projects"></a>
               <p class="p3">Cv</p>
               </div>
   </div>
@@ -212,22 +222,17 @@ transform: translate(-50%, -50%);
     <input type="checkbox" id="zoomCheck2">
     <label for="zoomCheck2">
       <img src="images/contacto.png" class="responsive2">
-      <p class="p3" ></p>
+
     </label>
     <div class="container img center1">
       <input type="checkbox" id="zoomCheck3">
       <label for="zoomCheck3">
         <img src="images/aboutme.png" class="responsive2">
-        <p class="p3" ></p>
       </label>
-  </div>
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01">
-      <div id="caption"></div>
-    </div>
-
-   
+      </div>
+      <div class="container img center2"><a href="navegation/Portfolio_JoelBlanco_21.pdf" target="_blank"><img src="images/portfolio.png" class="responsive3" alt="Projects"></a>
+      </div>
+  
 
 
 </body>
