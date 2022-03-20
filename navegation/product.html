@@ -74,7 +74,7 @@ body {
   height: auto;
 }
 .responsive2 {
-  width: 20%;
+  width: 10%;
   height: auto;
 }
 .p3 {
@@ -165,16 +165,27 @@ input[type=checkbox] {
 }
 
 .container img {
-  margin: 100px;
-  transition: transform 0.25s ease;
+  margin: 50px;
+  transition: transform 0.5s ease;
   cursor: zoom-in;
 }
 
 input[type=checkbox]:checked ~ label > img {
-  transform: scale(2);
+  transform: scale(4);
   cursor: zoom-out;
 }
-
+.center {
+position: relative;
+left: 80%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+.center1 {
+position: relative;
+left: 100%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
   </style>
 </head>
 
@@ -184,10 +195,10 @@ input[type=checkbox]:checked ~ label > img {
 <body class="body">
   <li><a href="../index.html"><img class="img1" src="../images/donutrojo.png" width="30" height="30" alt="donut"></a></li>
 
-  <div class="container">
+  <div class="container center1">
     <input type="checkbox" id="zoomCheck">
     <label for="zoomCheck">
-      <img src="images/messless3.png" calss="responsive2">
+      <img src="images/messless3.png" class="responsive2">
     </label>
   </div>
 
@@ -207,10 +218,10 @@ input[type=checkbox]:checked ~ label > img {
   </div>
 </div>
 
-  <div class="container">
-    <input type="checkbox" id="zoomCheck">
-    <label for="zoomCheck">
-      <img src="images/messless3.png" calss="responsive2">
+  <div class="container center">
+    <input type="checkbox" id="zoomCheck2">
+    <label for="zoomCheck2">
+      <img src="images/superlekker.png" class="responsive2">
     </label>
   </div>
 
@@ -226,24 +237,6 @@ input[type=checkbox]:checked ~ label > img {
       </div>
   
     </div>
-
-
-<script>
-  var modal = document.getElementById("myModal");
-  var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-modal.style.display = "block";
-modalImg.src = this.src;
-captionText.innerHTML = this.alt;
-}
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function() { 
-modal.style.display = "none";
-}
-
-</script>
    
 </body>
 <script>
