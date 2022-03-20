@@ -57,6 +57,10 @@ body {
   width: 3%;
   height: auto;
 }
+.responsive2 {
+  width: 10%;
+  height: auto;
+}
 .p3 {
   font-family:sans-serif;
   font-size: 15pt;
@@ -146,17 +150,43 @@ margin:auto;
         width: 100%;
         height: auto;
       }
+      input[type=checkbox] {
+  display: none;
+}
+
+.container img {
+  margin: 50px;
+  transition: transform 0.5s ease;
+  cursor: zoom-in;
+  text-align: center;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(4);
+  cursor: zoom-out;
+}
+.center {
+position: absolute;
+left: 45%;
+top: 40%;
+transform: translate(-50%, -50%);
+}
+.center1 {
+position: relative;
+left: 108%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
   </style>
 
 </head>
 <body class="body">
+
+  
 <div class="grid-container">
   <div class="item1"><a href="navegation/product.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
   <p class="p3"> Product</p>
   </div>
-    <div class="item3"><a href="navegation/interior.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
-      <p class="p3"> Interior</p>
-      </div>
       <div class="item1"><a href="navegation/installations.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
         <p class="p3"> Installations</p>
         </div>
@@ -167,13 +197,22 @@ margin:auto;
           </a>
             <p class="p3"> About Me</p>
             </div>
+            <div class="item3"><a href="navegation/interior.html"><img src="images/file.png" class="responsive1" alt="Projects" ></a>
+              <p class="p3"> Cv</p>
+              </div>
+  </div>
+  <div class="container center">
+    <input type="checkbox" id="zoomCheck2">
+    <label for="zoomCheck2">
+      <img src="images/contacto.png" class="responsive2">
+      <p class="p3" ></p>
+    </label>
   </div>
     <div id="myModal" class="modal">
       <span class="close">&times;</span>
       <img class="modal-content" id="img01">
       <div id="caption"></div>
     </div>
-    
     <script>
       var modal = document.getElementById("myModal");
       var img = document.getElementById("myImg");
